@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:divider="@null"
+        android:id="@+id/mes_list">
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line1"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <com.wu.things_test.EditTextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/delete"
+            android:layout_gravity="bottom"
+            android:background="@drawable/edittext_style"
+            android:id="@+id/msg_text"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:background="@drawable/button_style"
+            android:id="@+id/send"
+            android:text="发送"/>
+    </LinearLayout>
+</RelativeLayout>
